@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.NuevaFacturaVDController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="600.0">
+         <children>
+            <Label text="NUEVA FACTURA">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="447.0">
+         <children>
+            <Label text="REFERENCIA:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtReferrenciaFacturaVD" prefHeight="25.0" prefWidth="175.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="103.0" text="FECHA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="txtFechaNuevaFactVD">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="103.0" text="NOMBRE:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtNombreFactVD" editable="false" prefHeight="25.0" prefWidth="176.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="103.0" text="APELLIDO">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtApellidoFactVD" editable="false">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="600.0" stylesheets="@../inicio/application.css">
+         <children>
+            <Label text="BUSCAR CLIENTE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtClienteBuscar">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btnBuscar" mnemonicParsing="false" onAction="#buscarCliente" text="BUSCAR" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="106.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tblTablaCliente" prefHeight="106.0" prefWidth="427.0">
+               <columns>
+                  <TableColumn fx:id="clienteID" prefWidth="68.66665649414062" text="ID" />
+                  <TableColumn fx:id="clienteNombre" minWidth="9.333343505859375" prefWidth="192.0" text="Nombre" />
+                  <TableColumn fx:id="clienteApellidoPa" minWidth="0.0" prefWidth="164.0" text="Apellido Paterno" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="81.0" prefWidth="600.0" spacing="60.0">
+         <children>
+            <Button alignment="CENTER" lineSpacing="20.0" mnemonicParsing="false" onAction="#accionGuardarFactVD" stylesheets="@../inicio/application.css" text="Guardar" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" graphicTextGap="20.0" mnemonicParsing="false" onAction="#accionLimpiarFactVD" stylesheets="@../inicio/application.css" text="Limpiar" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>

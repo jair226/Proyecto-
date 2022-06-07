@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="757.0" type="Pane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.FactProdController">
+   <children>
+      <TableView fx:id="tblTablaFactProd" layoutX="26.0" layoutY="117.0" prefHeight="200.0" prefWidth="709.0">
+        <columns>
+          <TableColumn fx:id="facturasID_factprod" prefWidth="72.66665840148926" text="ID_Facturas" />
+            <TableColumn fx:id="cantidad_factprod" prefWidth="106.6666488647461" text="Cantidad_Facturas" />
+          <TableColumn fx:id="referencia_FactProc" prefWidth="120.66667175292969" text="Referencia_Producto" />
+            <TableColumn fx:id="fecha_FactProc" prefWidth="98.6666259765625" text="Fecha_Facturas" />
+            <TableColumn fx:id="Nombre_FactProct" prefWidth="119.99996948242188" text="Nombre_Producto" />
+            <TableColumn fx:id="Precio_Producto" prefWidth="101.33331298828125" text="Precio_Producto" />
+            <TableColumn fx:id="comandoEditar_factprod" prefWidth="84.66668701171875" text="Editar" />
+        </columns>
+      </TableView>
+      <Label layoutX="19.0" layoutY="26.0" text="Factura Productos">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#2e4f96" glyphName="FILES_ALT" layoutX="52.0" layoutY="94.0" onMouseClicked="#nuevaFactProd" size="30" />
+      <FontAwesomeIconView fill="#1dd00c" glyphName="REFRESH" layoutX="113.0" layoutY="94.0" onMouseClicked="#refrescarFactProd" size="30" />
+   </children>
+</fx:root>
