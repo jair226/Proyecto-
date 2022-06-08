@@ -7,7 +7,7 @@ base de datos ser manejada a través de una interfaz gráfica
 
 A grandes rasgos, este proyecto es en sí un genstor de facturas que
 tambien permitirá al dueño de cualquier vendedor tener un control 
-mucho más amplio de los clientes y d elos productos del mismo, esto
+mucho más amplio de los clientes y de los productos del mismo, esto
 a travéz de una interfaz gráfica donde fuimos extremadamente cuidadosos
 con los detalles del Frontend con tal de que cualquier persona incluso
 sin conocimiento del Backend pueda hacer uso y sacarle provecho de esta
@@ -23,6 +23,7 @@ demanda más baja, dentro de esta misma aplicación encontraremos la opción de
 ver, organizar, agregar y eliminar las facturas, esto será de grán utilidad ya
 que las facturas estan ligadas a un cliente y con respecto al análisis de esos datos
 será sencillo saber qué ofrecerle al cliente y como fortalecer la lealtad del mismo
-con ofertas o descuentos personalizados, todo esto gracias a que nuestro proyecto 
-reúne los puntos más importantes de información a tener en cuenta que son
-las facturas, los productos y lo clientes.
+con ofertas o descuentos personalizados, todo esto gracias a que nuestro proyecto que 
+reúne los puntos más importantes de información, esto hace que el trabajo sea mas eficiente 
+y con mayor calidad ytodo esto sintetizando en tres rubros fuertes 
+que son las facturas, los productos y lo clientes.
