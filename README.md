@@ -23,4 +23,6 @@ demanda más baja, dentro de esta misma aplicación encontraremos la opción de
 ver, organizar, agregar y eliminar las facturas, esto será de grán utilidad ya
 que las facturas estan ligadas a un cliente y con respecto al análisis de esos datos
 será sencillo saber qué ofrecerle al cliente y como fortalecer la lealtad del mismo
-con ofertas o descuentos personalizados.
+con ofertas o descuentos personalizados, todo esto gracias a que nuestro proyecto 
+reúne los puntos más importantes de información a tener en cuenta que son
+las facturas, los productos y lo clientes.
